@@ -1,6 +1,4 @@
-FROM python:alpine
-
-RUN pip install -U --quiet elasticsearch-curator==5.5.4
+FROM quay.io/pires/docker-elasticsearch-curator:5.5.4
 
 RUN adduser -D -s /bin/sh curator
 
